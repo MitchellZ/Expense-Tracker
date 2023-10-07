@@ -45,7 +45,7 @@ namespace Expense_Tracker.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (category.categoryId == 0)
+                if (category.CategoryId == 0)
                     _context.Add(category);
                 else
                     _context.Update(category);
